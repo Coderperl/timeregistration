@@ -6,9 +6,16 @@ import { Main } from './Components/Main';
 function App() {
   return (
     <>
-      <Main />
+      <Main hej hopp jag haar en gummisnopp />
     </>
   )
 }
 
 export default App;
+/*
+TODO:
+ - BLABLA
+ - item two
+ - Hejsan
+ - Cripstian Bloodsänen
+ */

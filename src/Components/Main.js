@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
 import { MdCorporateFare } from 'react-icons/md'
-import { BiRegistered, BiTimeFive } from 'react-icons/bi'
+import { BiTimeFive } from 'react-icons/bi'
 import { BsCalendarDate } from 'react-icons/bs'
 import { AiOutlineFileText } from 'react-icons/ai'
 import { fetchCustomers } from './Data/CustomerFetch'
@@ -53,7 +53,6 @@ export const Main = () => {
             .then(register => {
                 registers.push(register);
                 console.log(register)
-                console.log(description)
                 window.location.reload();
             })
     }
@@ -84,6 +83,7 @@ export const Main = () => {
                     </select>
                     <label>Project<AiOutlineFundProjectionScreen /></label>
                     <select className='input2' onChange={e => onSetSelectedProjects(e.target.value)}>
+                        <option>Please select project</option>
                         {project.map(proj =>
                             <option value={proj.id}>{proj.name} </option>
                         )}

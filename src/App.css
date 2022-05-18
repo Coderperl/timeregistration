@@ -12,7 +12,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+body{
+  background-image: linear-gradient(#abf1bc, #ffffff);
+  background-attachment: fixed;
+  min-height: 100%;
+  position: relative;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -47,14 +52,16 @@
 }
 
 .container {
+  background: white;
   justify-content: center;
   align-items: center;
   width: 500px;
   margin: auto;
-  margin-top: 60px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 40px;
   border-radius: 5px;
+  border: 2px solid green;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 
 }
@@ -77,6 +84,7 @@ label {
   font-size: 1.1em;
   font-weight: 500;
   margin-bottom: 2rem;
+  margin-top: 8px;
   border-radius: 5px;
   border: 0.5px solid black;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
@@ -90,7 +98,8 @@ label {
   font-size: 1.1em;
   font-weight: 500;
   margin-bottom: 2rem;
-  border-radius: 5px;
+  margin-top: 8px;
+  border-radius: 7px;
   border: 0.5px solid black;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
@@ -102,8 +111,9 @@ label {
   padding: 0.5rem;
   font-size: 1.1em;
   font-weight: 500;
+  margin-top: 8px;
   margin-bottom: 2rem;
-  border-radius: 5px;
+  border-radius: 7px;
   border: 0.5px solid black;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
@@ -113,15 +123,17 @@ label {
   align-items: center;
   appearance: none;
   background-color: #FCFCFD;
-  border-radius: 4px;
+  border-radius: 8px;
   border-width: 0;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   box-sizing: border-box;
-  color: #36395A;
+  border: 2px solid gray;
+  color: black;
   cursor: pointer;
   display: flex;
   font-family: "JetBrains Mono", monospace;
   height: 48px;
+  width: 100px;
   justify-content: center;
   line-height: 1;
   list-style: none;
@@ -129,7 +141,6 @@ label {
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
-
   text-decoration: none;
   transition: box-shadow .15s, transform .15s;
   user-select: none;
@@ -155,7 +166,7 @@ label {
 }
 
 button:hover {
-  background-color: #c5c5c5;
+  background-color: #f8f8f9;
 }
 
 .message {
