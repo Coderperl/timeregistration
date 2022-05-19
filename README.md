@@ -1,3 +1,7 @@
+Small timeregistration application.
+
+Made for customers to register the billed time worked on specific project. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
